@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find the right JOYTUTUS truck tent size by measuring your truck bed and checking common bed sizes by model.">
+  <title>Truck Bed Size Guide | JOYTUTUS</title>
+  <style>
+    :root{--navy:#09275f;--blue:#0753a8;--green:#23851f;--ink:#15233b;--muted:#59677d;--line:#d8e2ef;--paper:#fff;--wash:#f4f8fc;--amber:#ffbd16}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:#edf3f9;color:var(--ink);font:16px/1.45 Inter,Arial,sans-serif}
+    .page{max-width:1160px;margin:auto;background:var(--paper);min-height:100vh;box-shadow:0 10px 45px rgba(9,39,95,.09)}
+    header{padding:44px 24px 28px;text-align:center;background:linear-gradient(180deg,#fff 60%,#f4f8fc)}
+    h1{margin:0;color:var(--navy);font-size:clamp(2.25rem,6vw,4.7rem);line-height:.95;letter-spacing:-.045em;text-transform:uppercase}
+    header p{margin:14px auto 0;max-width:760px;font-size:clamp(1rem,2.3vw,1.35rem)}
+    header strong{color:var(--navy)}
+    main{padding:0 24px 40px}
+    .section{margin-top:28px}
+    .section-title{display:inline-flex;align-items:center;margin:0 0 16px;padding:8px 14px;border-radius:7px;background:var(--navy);color:#fff;font-size:clamp(1.25rem,3vw,2rem);line-height:1.15;text-transform:uppercase}
+    .size-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+    .size-card{grid-column:span 2;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 4px 18px rgba(15,45,85,.07)}
+    .size-card:nth-last-child(-n+2){grid-column:span 3}
+    .size-card h3{margin:0;padding:10px 12px;background:var(--blue);color:#fff;text-align:center;font-size:1.1rem;line-height:1.05;text-transform:uppercase}
+    .size-card.mid h3{background:var(--green)}
+    .size-card.long h3{background:#444}
+    .card-body{padding:18px;text-align:center}
+    .feet{font-size:2.7rem;font-weight:900;line-height:1;color:var(--blue)}
+    .mid .feet{color:var(--green)} .long .feet{color:#444}
+    .inches{font-weight:800}
+    .bed{position:relative;width:120px;height:142px;margin:14px auto 12px;border:3px solid currentColor;border-radius:12px 12px 4px 4px;color:var(--blue);background:linear-gradient(90deg,transparent 13%,#f5f7f9 13% 87%,transparent 87%)}
+    .mid .bed{color:var(--green)} .long .bed{color:#444}
+    .bed:before,.bed:after{content:"";position:absolute;top:17px;bottom:10px;width:8px;border:2px solid currentColor;background:#fff}
+    .bed:before{left:-7px}.bed:after{right:-7px}
+    .measure{position:absolute;top:28px;bottom:23px;left:50%;border-left:3px solid currentColor}
+    .measure:before,.measure:after{content:"";position:absolute;left:-6px;border:5px solid transparent}
+    .measure:before{top:-2px;border-bottom-color:currentColor}.measure:after{bottom:-2px;border-top-color:currentColor}
+    .measure span{position:absolute;top:43%;left:9px;transform:translateY(-50%);font-weight:900}
+    .tailgate{position:absolute;bottom:0;left:9px;right:9px;border-top:3px solid currentColor;color:#111;font-size:.72rem;font-weight:900}
+    .fit{display:inline-block;padding:5px 12px;border-radius:7px;background:#e8f0fb;font-size:1.15rem;font-weight:900}
+    .mid .fit{background:#e7f3e7}.long .fit{background:#eee}
+    .popular{display:inline-block;margin-left:5px;padding:3px 7px;border-radius:99px;background:var(--amber);color:#332500;font-size:.68rem;font-weight:900;vertical-align:middle}
+    .hint{margin:-8px 0 14px;color:var(--muted)}
+    .models{display:grid;gap:12px}
+    .brand{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    .brand h3{margin:0;padding:9px 14px;background:#eef4fb;color:var(--navy);font-size:1rem;text-transform:uppercase}
+    .model{display:grid;grid-template-columns:minmax(130px,1fr) 2fr;gap:14px;align-items:center;padding:10px 14px;border-top:1px solid var(--line)}
+    .model-name{font-weight:800}
+    .badges{display:flex;flex-wrap:wrap;gap:7px}
+    .badge{min-width:68px;padding:4px 9px;border-radius:5px;background:var(--blue);color:#fff;text-align:center;font-weight:900;font-size:.88rem}
+    .badge.mid{background:var(--green)}.badge.long{background:#4a4a4a}
+    .measure-box{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:center;padding:22px;border:1px solid #cbdced;border-radius:14px;background:#f9fbfe}
+    .measure-box h2{margin:0 0 8px;color:var(--navy);text-transform:uppercase}
+    ol{margin:0;padding-left:22px}ol li{padding:3px 0}
+    .diagram{position:relative;height:150px;border-bottom:12px double #222}
+    .wall{position:absolute;bottom:0;width:42px;height:120px;border:4px solid #222;border-radius:12px 12px 0 0;background:#fff}
+    .wall.left{left:6%}.wall.right{right:6%}
+    .arrow{position:absolute;left:20%;right:20%;top:34px;border-top:5px solid var(--green)}
+    .arrow:before,.arrow:after{content:"";position:absolute;top:-12px;border:10px solid transparent}
+    .arrow:before{left:-6px;border-right-color:var(--green)}.arrow:after{right:-6px;border-left-color:var(--green)}
+    .closed{text-align:center;color:var(--green);font-weight:900;margin-top:10px}
+    .notice{display:flex;gap:13px;align-items:flex-start;margin-top:18px;padding:17px 19px;border-radius:12px;background:#e8f2ff;color:var(--navy);font-weight:700}
+    .info{display:grid;flex:0 0 auto;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;font-family:serif}
+    footer{padding:12px 24px 36px;text-align:center;color:var(--muted);font-size:.82rem}
+    @media(max-width:760px){
+      body{background:#fff}.page{box-shadow:none}header{padding:30px 18px 20px}main{padding:0 16px 28px}
+      .section{margin-top:22px}.section-title{display:flex;width:100%;font-size:1.15rem}
+      .size-grid{grid-template-columns:1fr 1fr;gap:12px}.size-card,.size-card:nth-last-child(-n+2){grid-column:span 1}
+      .size-card.long{grid-column:1/-1}.size-card h3{font-size:.86rem}.card-body{padding:14px 8px}
+      .feet{font-size:2rem}.bed{transform:scale(.86);margin:4px auto 0}.fit{font-size:.95rem}
+      .model{grid-template-columns:1fr}.model-name{font-size:1.02rem}.badge{flex:1}
+      .measure-box{grid-template-columns:1fr;padding:18px}.diagram{height:125px}.wall{height:98px}
+    }
+    @media(max-width:390px){.size-grid{grid-template-columns:1fr}.size-card.long{grid-column:auto}.model{padding:10px}.badge{min-width:58px}}
+    @media print{body{background:#fff}.page{box-shadow:none}.size-card,.brand,.measure-box{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Truck Bed Size Guide</h1>
+    <p>Choose the right <strong>JOYTUTUS</strong> truck tent based on your truck bed length.</p>
+  </header>
+  <main>
+    <section class="section">
+      <h2 class="section-title">1. Choose your truck tent size</h2>
+      <div class="size-grid">
+        <article class="size-card mid"><h3>Mid-Size<br>Short Bed</h3><div class="card-body"><div class="feet">5 ft</div><div class="inches">(60")</div><div class="bed"><div class="measure"><span>60"</span></div><div class="tailgate">TAILGATE</div></div><div class="fit">Fits 5'0"–5'2"</div></div></article>
+        <article class="size-card mid"><h3>Mid-Size<br>Standard Bed</h3><div class="card-body"><div class="feet">5.5 ft <span class="popular">POPULAR</span></div><div class="inches">(66")</div><div class="bed"><div class="measure"><span>66"</span></div><div class="tailgate">TAILGATE</div></div><div class="fit">Fits 5'5"–5'8"</div></div></article>
+        <article class="size-card"><h3>Full-Size<br>Short Bed</h3><div class="card-body"><div class="feet">6 ft</div><div class="inches">(72")</div><div class="bed"><div class="measure"><span>72"</span></div><div class="tailgate">TAILGATE</div></div><div class="fit">Fits 6'0"–6'3"</div></div></article>
+        <article class="size-card"><h3>Full-Size<br>Standard Bed</h3><div class="card-body"><div class="feet">6.5 ft <span class="popular">POPULAR</span></div><div class="inches">(78")</div><div class="bed"><div class="measure"><span>78"</span></div><div class="tailgate">TAILGATE</div></div><div class="fit">Fits 6'4"–6'7"</div></div></article>
+        <article class="size-card long"><h3>Full-Size<br>Long Bed</h3><div class="card-body"><div class="feet">8 ft</div><div class="inches">(98")</div><div class="bed"><div class="measure"><span>98"</span></div><div class="tailgate">TAILGATE</div></div><div class="fit">Fits 8'0"–8'2"</div></div></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">2. Check common bed options by model</h2>
+      <p class="hint">Find your truck model, then check its common bed-size options below.</p>
+      <div class="models">
+        <div class="brand"><h3>Ford</h3><div class="model"><span class="model-name">F-150</span><div class="badges"><span class="badge mid">5.5 FT</span><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">F-250 / F-350</span><div class="badges"><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Ranger</span><div class="badges"><span class="badge mid">5 FT</span><span class="badge">6 FT</span></div></div></div>
+        <div class="brand"><h3>Chevrolet</h3><div class="model"><span class="model-name">Silverado 1500</span><div class="badges"><span class="badge mid">5.5 FT</span><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Silverado 2500 / 3500</span><div class="badges"><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Colorado</span><div class="badges"><span class="badge mid">5 FT</span><span class="badge">6 FT</span></div></div></div>
+        <div class="brand"><h3>Ram</h3><div class="model"><span class="model-name">Ram 1500</span><div class="badges"><span class="badge mid">5.5 FT</span><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Ram 2500</span><div class="badges"><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Ram 3500</span><div class="badges"><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div></div>
+        <div class="brand"><h3>Toyota</h3><div class="model"><span class="model-name">Tundra</span><div class="badges"><span class="badge mid">5.5 FT</span><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Tacoma</span><div class="badges"><span class="badge mid">5 FT</span><span class="badge">6 FT</span></div></div></div>
+        <div class="brand"><h3>GMC</h3><div class="model"><span class="model-name">Sierra 1500</span><div class="badges"><span class="badge mid">5.5 FT</span><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Sierra 2500 / 3500</span><div class="badges"><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Canyon</span><div class="badges"><span class="badge mid">5 FT</span><span class="badge">6 FT</span></div></div></div>
+        <div class="brand"><h3>Nissan</h3><div class="model"><span class="model-name">Titan</span><div class="badges"><span class="badge mid">5.5 FT</span><span class="badge">6.5 FT</span><span class="badge long">8 FT</span></div></div><div class="model"><span class="model-name">Frontier</span><div class="badges"><span class="badge mid">5 FT</span><span class="badge">6 FT</span></div></div></div>
+        <div class="brand"><h3>Jeep</h3><div class="model"><span class="model-name">Gladiator</span><div class="badges"><span class="badge mid">5 FT</span><span class="badge">6 FT</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="measure-box">
+        <div><h2>How to measure</h2><ol><li>Close the tailgate.</li><li>Measure the inside bed length.</li><li>Measure from the front wall to the inside edge of the tailgate.</li></ol></div>
+        <div><div class="diagram" aria-label="Measure inside the truck bed with the tailgate closed"><div class="wall left"></div><div class="arrow"></div><div class="wall right"></div></div><div class="closed">TAILGATE CLOSED</div></div>
+      </div>
+      <div class="notice"><span class="info">i</span><span>Bed size may vary by model year and configuration. Always measure the inside bed length with the tailgate closed before ordering.</span></div>
+    </section>
+  </main>
+  <footer>Common bed sizes are provided as a quick reference. Confirm your vehicle’s exact configuration before purchase.</footer>
+</div>
+</body>
+</html>
